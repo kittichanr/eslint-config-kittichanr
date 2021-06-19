@@ -23,7 +23,7 @@ module.exports = {
 	},
 	extends: ['airbnb', 'plugin:@typescript-eslint/recommended-requiring-type-checking'],
 	rules: {
-        // typescript
+		// typescript
 		'@typescript-eslint/explicit-function-return-type': 'off',
 		'@typescript-eslint/no-explicit-any': 'off',
 		'@typescript-eslint/no-unsafe-call': 'off',
@@ -46,7 +46,7 @@ module.exports = {
 		'@typescript-eslint/no-unused-vars': ['error', { args: 'none' }],
 		'@typescript-eslint/require-await': 'off',
 
-        semi: [2, 'never'],
+		semi: [2, 'never'],
 		indent: [2, 'tab'],
 		quotes: [2, 'single', 'avoid-escape'],
 
@@ -285,5 +285,5 @@ module.exports = {
 		'no-useless-constructor': [1],
 		'no-duplicate-imports': [1],
 		'object-curly-spacing': [1, 'always', { 'arraysInObjects': false }],
-    }
+	}
 }

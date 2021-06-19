@@ -27,8 +27,8 @@ module.exports = {
 		'airbnb',
 		'eslint:recommended',
 	],
-	plugins: ['react', 'jest', 'react-hooks'],
-    overrides: [
+	plugins: ['react', 'flowtype', 'jest', 'react-hooks'],
+	overrides: [
 		typescriptConfig,
 	],
 	rules: {
