@@ -1,0 +1,43 @@
+{
+  "name": "@petchkubbb/eslint-config-petchkubbb",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petchkubb/eslint-config-petchkubbb.git"
+  },
+  "author": "Petchkubbb",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/petchkubb/eslint-config-petchkubbb/issues"
+  },
+  "homepage": "https://github.com/petchkubb/eslint-config-petchkubbb#readme",
+  "peerDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.29.0",
+    "prettier": "^2.3.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-sass-guidelines": "^8.0.0"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.27.0",
+    "@typescript-eslint/parser": "^4.27.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.29.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jest": "^24.3.6",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "prettier": "^2.3.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-sass-guidelines": "^8.0.0",
+    "app-root-path": "^3.0.0"
+  },
+  "description": ""
+}
