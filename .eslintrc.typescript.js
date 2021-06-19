@@ -1,38 +1,52 @@
-// 1=warn, 2=error
-
-const path = require('path')
-
-const typescriptConfig = require(path.join(__dirname, '.eslintrc.typescript.js'))
+const appRoot = require('app-root-path')
 
 module.exports = {
-	root: true,
-	parser: 'babel-eslint',
+	files: ['*.ts', '*.tsx'],
+	plugins: ['@typescript-eslint', 'react', 'jest', 'unused-imports'],
+	parser: '@typescript-eslint/parser',
 	parserOptions: {
-		ecmaVersion: 6,
-		sourceType: 'module',
-		ecmaFeatures: {
-			jsx: true,
+		project: ['tsconfig.json'],
+		tsconfigRootDir: appRoot
+	},
+	settings: {
+		'import/parsers': {
+			'@typescript-eslint/parser': ['.ts', '.tsx']
 		},
+		'import/resolver': {
+			typescript: {
+				alwaysTryTypes: true
+			}
+		}
 	},
-	overrides: [
-		typescriptConfig,
-	],
 	env: {
-		browser: true,
-		node: true,
-		commonjs: true,
-		jest: true,
+		jest: true
 	},
-	globals: {
-		MyGlobal: true,
-	},
-	extends: [
-		'airbnb',
-		'eslint:recommended',
-	],
-	plugins: ['react', 'jest', 'react-hooks'],
+	extends: ['airbnb', 'plugin:@typescript-eslint/recommended-requiring-type-checking'],
 	rules: {
-		semi: [2, 'never'],
+        // typescript
+		'@typescript-eslint/explicit-function-return-type': 'off',
+		'@typescript-eslint/no-explicit-any': 'off',
+		'@typescript-eslint/no-unsafe-call': 'off',
+		'@typescript-eslint/no-unsafe-assignment': 'off',
+		'@typescript-eslint/no-unsafe-member-access': 'off',
+		'@typescript-eslint/no-floating-promises': 'off',
+		'@typescript-eslint/no-unsafe-return': 'off',
+		'@typescript-eslint/restrict-plus-operands': 'off',
+		'@typescript-eslint/restrict-template-expressions': 'off',
+		'@typescript-eslint/unbound-method': 'off',
+		'@typescript-eslint/no-useless-constructor': 'error',
+		'@typescript-eslint/no-misused-promises': 'off', // drain performance
+		'@typescript-eslint/await-thenable': 'off',
+		'@typescript-eslint/no-use-before-define': 'off',
+		'@typescript-eslint/prefer-regexp-exec': 'off',
+		'@typescript-eslint/no-unused-expressions': 'off',
+		'@typescript-eslint/no-inferrable-types': 'off',
+		'@typescript-eslint/no-var-requires': 'off',
+		'@typescript-eslint/ban-ts-ignore': 'off',
+		'@typescript-eslint/no-unused-vars': ['error', { args: 'none' }],
+		'@typescript-eslint/require-await': 'off',
+
+        semi: [2, 'never'],
 		indent: [2, 'tab'],
 		quotes: [2, 'single', 'avoid-escape'],
 
@@ -271,5 +285,5 @@ module.exports = {
 		'no-useless-constructor': [1],
 		'no-duplicate-imports': [1],
 		'object-curly-spacing': [1, 'always', { 'arraysInObjects': false }],
-	},
+    }
 }
