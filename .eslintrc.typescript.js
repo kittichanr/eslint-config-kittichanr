@@ -59,9 +59,6 @@ module.exports = {
 		'space-infix-ops': [2],
 
 		// react
-
-		'react/jsx-uses-react': 'off', // React 17
-		'react/react-in-jsx-scope': 'off', // React 17
 		'react/jsx-one-expression-per-line': 'off', // disable airbnb
 
 		'react/prop-types': [0],
