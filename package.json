@@ -1,10 +1,9 @@
 {
   "name": "@petchkubbb/eslint-config-petchkubbb",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "main": "index.js",
   "scripts": {
-    "release:major": "version-pong major -t eslint",
-    "release:minor": "version-pong minor -t eslint"
+    "release": "yarn publish"
   },
   "repository": {
     "type": "git",
@@ -41,12 +40,5 @@
     "prettier": "^2.3.1",
     "stylelint": "^13.13.1",
     "stylelint-config-sass-guidelines": "^8.0.0"
-  },
-  "description": "",
-  "devDependencies": {
-    "version-pong": "^2.2.1"
-  },
-  "version-pong": {
-    "method": "npm publish"
   }
 }
