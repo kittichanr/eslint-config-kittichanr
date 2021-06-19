@@ -26,6 +26,7 @@ module.exports = {
 	extends: [
 		'airbnb',
 		'eslint:recommended',
+		'prettier/react'
 	],
 	plugins: ['react', 'flowtype', 'jest', 'react-hooks'],
 	overrides: [
