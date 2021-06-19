@@ -14,9 +14,6 @@ module.exports = {
 			jsx: true,
 		},
 	},
-	overrides: [
-		typescriptConfig,
-	],
 	env: {
 		browser: true,
 		node: true,
@@ -31,6 +28,9 @@ module.exports = {
 		'eslint:recommended',
 	],
 	plugins: ['react', 'jest', 'react-hooks'],
+    overrides: [
+		typescriptConfig,
+	],
 	rules: {
 		semi: [2, 'never'],
 		indent: [2, 'tab'],
