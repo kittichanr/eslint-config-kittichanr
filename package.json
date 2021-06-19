@@ -10,7 +10,7 @@
     "url": "git+https://github.com/petchkubb/eslint-config-petchkubbb.git"
   },
   "author": "Petchkubbb",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/petchkubb/eslint-config-petchkubbb/issues"
   },
