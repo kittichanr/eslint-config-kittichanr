@@ -183,7 +183,7 @@ module.exports = {
 		'jsx-a11y/no-autofocus': [0],
 
 		// other
-		'no-unused-vars': [2, { args: 'none' }],
+		'no-unused-vars': [0],
 		'dot-notation': [0],
 		'space-before-function-paren': [0],
 		'no-underscore-dangle': [0],
