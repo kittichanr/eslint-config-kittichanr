@@ -220,7 +220,6 @@ module.exports = {
 		// all block must have {..}
 		'curly': [2],
 		'dot-location': [2, 'property'],
-		'eqeqeq': [1, 'smart'],
 		'no-eval': [2],
 		'no-extend-native': [2],
 		'no-implied-eval': [2],

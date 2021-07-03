@@ -77,7 +77,7 @@ module.exports = {
 		'react/jsx-filename-extension': [
 			1,
 			{
-				extensions: ['.js', '.jsx']
+				extensions: ['.ts', '.tsx']
 			}
 		],
 		'react/jsx-indent': [0, 'tab'],
@@ -107,6 +107,9 @@ module.exports = {
 		],
 		'react-hooks/rules-of-hooks': 'error',
 		'react-hooks/exhaustive-deps': 'off',
+		'react/destructuring-assignment': 'off',
+		'react/jsx-props-no-spreading': 'off',
+		'react/no-danger': 'off',
 		'react/jsx-curly-brace-presence': 'off',
 		'react/jsx-no-duplicate-props': [1, { ignoreCase: false }],
 
@@ -234,7 +237,6 @@ module.exports = {
 		// all block must have {..}
 		'curly': [2],
 		'dot-location': [2, 'property'],
-		'eqeqeq': [1, 'smart'],
 		'no-eval': [2],
 		'no-extend-native': [2],
 		'no-implied-eval': [2],
