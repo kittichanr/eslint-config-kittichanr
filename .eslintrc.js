@@ -272,5 +272,6 @@ module.exports = {
 		'no-useless-constructor': [1],
 		'no-duplicate-imports': [1],
 		'object-curly-spacing': [1, 'always', { 'arraysInObjects': false }],
+		'arrow-body-style': [2, 'always']
 	},
 }

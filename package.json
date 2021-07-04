@@ -17,7 +17,7 @@
   "homepage": "https://github.com/petchkubb/eslint-config-petchkubbb#readme",
   "peerDependencies": {},
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "4.27.0",
+    "@typescript-eslint/eslint-plugin": "^4.28.1",
     "@typescript-eslint/parser": "4.27.0",
     "app-root-path": "^3.0.0",
     "babel-eslint": "^10.1.0",

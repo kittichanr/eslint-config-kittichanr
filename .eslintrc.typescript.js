@@ -16,7 +16,7 @@ module.exports = {
 	env: {
 		jest: true
 	},
-	extends: ['airbnb', 'plugin:@typescript-eslint/recommended-requiring-type-checking'],
+	extends: ['airbnb', 'plugin:@typescript-eslint/recommended', 'plugin:@typescript-eslint/recommended-requiring-type-checking'],
 	rules: {
 		// typescript
 		'@typescript-eslint/explicit-function-return-type': 'off',
@@ -284,5 +284,6 @@ module.exports = {
 		'no-useless-constructor': [1],
 		'no-duplicate-imports': [1],
 		'object-curly-spacing': [1, 'always', { 'arraysInObjects': false }],
+		'arrow-body-style': [2, 'always']
 	}
 }
