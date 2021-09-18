@@ -38,8 +38,9 @@ module.exports = {
 		'@typescript-eslint/no-inferrable-types': 'off',
 		'@typescript-eslint/no-var-requires': 'off',
 		'@typescript-eslint/ban-ts-ignore': 'off',
-		'@typescript-eslint/no-unused-vars': ['error', { args: 'none' }],
+		'@typescript-eslint/no-unused-vars': 0,
 		'@typescript-eslint/require-await': 'off',
+		'@typescript-eslint/explicit-module-boundary-types': 'off',
 
 		semi: [2, 'never'],
 		indent: [2, 'tab'],
@@ -51,12 +52,12 @@ module.exports = {
 
 		'space-before-blocks': [2],
 		'space-in-parens': [2, 'never'],
-		'space-infix-ops': [2],
+		'space-infix-ops': 2,
 
 		// react
 		'react/jsx-one-expression-per-line': 'off', // disable airbnb
 
-		'react/prop-types': [0],
+		'react/prop-types': 0,
 		'react/require-default-props': [0],
 		'react/forbid-prop-types': [0],
 		'react/default-props-match-prop-types': [0],
@@ -107,6 +108,7 @@ module.exports = {
 		'react/no-danger': 'off',
 		'react/jsx-curly-brace-presence': 'off',
 		'react/jsx-no-duplicate-props': [1, { ignoreCase: false }],
+		'react/react-in-jsx-scope': 'off',
 
 		// import
 		'import/no-extraneous-dependencies': [0],
@@ -181,7 +183,7 @@ module.exports = {
 		'jsx-a11y/no-autofocus': [0],
 
 		// other
-		'no-unused-vars': [0],
+		'no-unused-vars': 0,
 		'dot-notation': [0],
 		'space-before-function-paren': [0],
 		'no-underscore-dangle': [0],
@@ -193,7 +195,7 @@ module.exports = {
 		'prefer-destructuring': [0],
 		'no-use-before-define': [0],
 		'no-return-assign': [0],
-		'no-console': [2],
+		'no-console': 0,
 		'object-shorthand': [0],
 		'func-names': [0],
 		'no-restricted-properties': [1],
@@ -228,6 +230,7 @@ module.exports = {
 		'semi-style': [0],
 		'no-extra-semi': [0],
 		'generator-star-spacing': [0],
+		'no-undef': 0,
 
 		// all block must have {..}
 		'curly': [2],
@@ -284,6 +287,6 @@ module.exports = {
 		'no-useless-constructor': [1],
 		'no-duplicate-imports': [1],
 		'object-curly-spacing': [1, 'always', { 'arraysInObjects': false }],
-		'arrow-body-style': [2, 'always']
+		'arrow-body-style': [0, 'always']
 	}
 }
