@@ -1,5 +1,5 @@
 {
-  "name": "@petchkubbb/eslint-config-petchkubbb",
+  "name": "@kittichanr/eslint-config-kittichanr",
   "version": "0.2.17",
   "main": "index.js",
   "scripts": {
@@ -7,14 +7,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/petchkubb/eslint-config-petchkubbb.git"
+    "url": "git+https://github.com/kittichanr/eslint-config-kittichanr.git"
   },
-  "author": "Petchkubbb",
+  "author": "kittichanr",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/petchkubb/eslint-config-petchkubbb/issues"
+    "url": "https://github.com/kittichanr/eslint-config-kittichanr/issues"
   },
-  "homepage": "https://github.com/petchkubb/eslint-config-petchkubbb#readme",
+  "homepage": "https://github.com/kittichanr/eslint-config-kittichanr#readme",
   "peerDependencies": {},
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.48.2",
